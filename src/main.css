@@ -1,0 +1,90 @@
+:root{
+    --blue: #006AB3;
+    --white: #fff;
+    --red:rgb(255, 0, 0);
+    --font-700: 700;
+    --font-600: 600;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.app-title{
+    font-size: 1.25rem;
+    font-weight: var(--font-600);
+    color: var(--blue);
+}
+
+.left-container{
+    min-height: 100vh;
+    border-right: 1px solid rgba(0,0,0,.5);
+}
+
+.add-contact-title{
+    font-size: 1.25rem;
+    font-weight: var(--font-600);
+    color: var(--blue);
+}
+
+/* Create Form Styling */
+.custom-button-bg-fill{
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    font-weight: 500;
+}
+
+.custom-button-bg-fill:hover,
+.custom-button-bg-fill:focus{
+    background:none;
+    border:2px solid var(--blue);
+    color:var(--blue);
+}
+
+.form-create-contact input:not(#upload-image){
+  border:1px solid var(--blue);
+}
+
+/* Contact List Container */
+.contact-list-title{
+    font-size:2.5rem;
+    font-weight: var(--font-600);
+    color: var(--blue);
+}
+
+.contact-show{
+    border: 1px solid var(--blue);
+}
+
+.card-icon-container > p{
+    font-size: 1.25rem;
+    font-weight: --var(font-700);
+}
+
+.card-icon-container > p:hover,
+.card-icon-container > p:focus{
+    cursor: pointer;
+}
+
+.card-icon-container > p:first-child{
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
+
+.card-icon-container > p:first-child:hover,
+.card-icon-container > p:first-child:focus{
+    background: var(--blue);
+    color: var(--white);
+}
+
+.card-icon-container > p:last-child{
+    border: 1px solid var(--red);
+    color: var(--white);
+    background: var(--red);
+}
+
+.card-icon-container > p:last-child:hover{
+    background: none;
+    color: var(--red);
+}
