@@ -1,6 +1,9 @@
 import { useState } from "react";
+import useContactContexthook from '../hooks/use-contact-context-hook';
 
-const ContactEdit = ({contact, onUpdate, activeEdit}) => {
+const ContactEdit = ({contact, activeEdit}) => {
+
+  const { updateContactById } = useContactContexthook();
 
   const [updateContact, setUpdateContact] = useState({
     id: contact.id,
@@ -10,7 +13,7 @@ const ContactEdit = ({contact, onUpdate, activeEdit}) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onUpdate(updateContact);
+    updateContactById(updateContact);
     // Close edit form
     activeEdit(false);
   }

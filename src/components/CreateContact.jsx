@@ -1,6 +1,9 @@
 import { useState } from "react";
+import useContactContexthook from '../hooks/use-contact-context-hook';
 
-const CreateContact = ({onCreateContact}) => {
+const CreateContact = () => {
+
+  const { createContact } = useContactContexthook();
 
   const [formData, setFormData] = useState({
     name:'',
@@ -9,7 +12,7 @@ const CreateContact = ({onCreateContact}) => {
 
   const formSubmitHandle = (event) => {
     event.preventDefault();
-    onCreateContact(formData);
+    createContact(formData);
     setFormData({
       name:'',
       mobile:''

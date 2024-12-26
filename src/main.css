@@ -17,8 +17,13 @@
 }
 
 .left-container{
-    min-height: 100vh;
     border-right: 1px solid rgba(0,0,0,.5);
+}
+
+@media (min-width: 1200px){
+    .left-container{
+        min-height: 100vh;
+    }
 }
 
 .add-contact-title{

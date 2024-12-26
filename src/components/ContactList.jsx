@@ -1,10 +1,13 @@
 import ContactShow from "./ContactShow";
 import { Container, Row } from 'react-bootstrap';
+import useContactContexthook from '../hooks/use-contact-context-hook';
 
-const ContactList = ({contacts, onDelete, onUpdate}) => {
+const ContactList = () => {
+
+  const { contacts } = useContactContexthook();
   
   const lists = contacts.map((contact) => {
-    return <ContactShow contact={contact} key={contact.id} onDelete={onDelete} onUpdate={onUpdate}/>
+    return <ContactShow contact={contact} key={contact.id}/>
   });
 
   return (
