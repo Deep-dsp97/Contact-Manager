@@ -47,8 +47,42 @@
     color:var(--blue);
 }
 
-.form-create-contact input:not(#upload-image){
+/* .form-create-contact{
+    
+} */
+@media (max-width: 1200px){
+    
+    .form-create-contact-container{
+        position: fixed;
+        background: var(--white);
+        transition: 0.5s ease;
+        width: 100%;
+        border-top: 1px solid var(--blue);
+    }
+
+    .form-create-contact-container-toggle{
+        bottom:-250px;
+        opacity: 0;
+    }
+
+    .left-container{
+        border-right: none;
+    }
+}
+
+.form-create-contact-container-toggle-active{
+    position: fixed;
+    bottom:0;
+    opacity:1;
+}
+
+.form-create-contact input:not(#upload-image),
+.seach-input-form > input{
   border:1px solid var(--blue);
+}
+
+.seach-input-form{
+    font-weight: var(--font-600);
 }
 
 /* Contact List Container */

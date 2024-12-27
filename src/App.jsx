@@ -17,11 +17,11 @@ function App () {
   return (
       <Container fluid>
         <Row>
-          <Col lg={2} className="logo-column-container px-0">
+          <Col xl={2} className="logo-column-container px-0">
             {/* <Navbar onCreate={createContact}/> */}
             <Navbar/>
           </Col>
-          <Col lg={10} className="show-contact-list-contianer">
+          <Col xl={10} className="show-contact-list-contianer">
             {/* <ContactList contacts={contacts} onDelete={deleteContactById} onUpdate={updateContactById}/> */}
             <ContactList/>
           </Col>
